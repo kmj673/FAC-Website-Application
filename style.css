@@ -56,7 +56,7 @@ ul > a > li {
 /* inside */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 .container > .introduction {
   border: 5px solid pink;
@@ -65,7 +65,19 @@ ul > a > li {
 .container > .introduction > h3 {
   font-size: 2.5em;
 }
-.container > .selfie {
+
+.container > .panel {
   border: 5px solid pink;
   width: 50%;
+}
+.container > .week {
+  border: 5px solid pink;
+  width: 20%;
+  height: 20%;
+}
+.container > .link-circle {
+  border: 5px solid pink;
+  border-radius: 50%;
+  width: 33.3%;
+  height: 33.3%;
 }
