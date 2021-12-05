@@ -3,13 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-nav {
-  background-color: hotpink;
-  height: 5vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
 .intro {
   border: 5px solid red;
   height: 100vh;
@@ -30,15 +23,7 @@ footer {
   border: 5px solid green;
   height: 5vh;
 }
-ul {
-  text-align: center;
-  position: relative;
-  top: 30%;
-}
-ul > a > li {
-  display: inline-block;
-  margin: 0 5%;
-}
+
 .subject {
   /* border: 5px solid green; */
   margin-top: 5vh;
