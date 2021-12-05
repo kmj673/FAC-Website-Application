@@ -1,0 +1,40 @@
+/* inside */
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.container > .panel {
+  /* border: 5px solid green; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.container > .panel > h5 {
+  font-size: 2em;
+  color: #fabcde;
+}
+.container > .panel > span {
+  font-size: 1.5em;
+}
+.container > .project-img {
+  /* border: 5px solid green; */
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.container > .project-img > img {
+  width: 100%;
+}
+.left,
+.right {
+  /* border: 5px solid green; */
+  width: 5%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.container > .week {
+  border: 5px solid green;
+  width: 20%;
+}
+.container > .link-circle {
+  border: 5px solid green;
+  border-radius: 50%;
+  width: 33.3%;
+  height: 33.3%;
+}

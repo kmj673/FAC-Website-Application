@@ -1,0 +1,28 @@
+/* inside */
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.container > .introduction {
+  /* border: 5px solid green; */
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.container > .introduction > h5 {
+  font-size: 2em;
+  color: #fabcde;
+}
+.container > .introduction > p {
+  font-size: 1.5em;
+}
+.container > .selfie {
+  /* border: 5px solid green; */
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}

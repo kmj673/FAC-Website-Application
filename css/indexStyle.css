@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 html {
+  font-family: Pretendard;
   font-size: 100%;
 }
 body {
@@ -14,21 +15,34 @@ body {
   align-items: center;
 }
 h1 {
+  /* border: 5px solid green; */
   font-size: 5em;
+  color: #bbdecf;
 }
 nav {
-  background-color: hotpink;
   font-size: 1.5em;
-  width: 100%;
+  font-weight: 600;
+  width: 75%;
 }
 ul {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style-type: none;
   text-align: center;
 }
-ul > a {
-  width: 100%;
+ul > li > a {
   text-decoration: none;
+  color: #000000;
+}
+ul > li {
+  padding: 0 1em;
+}
+ul > li:hover {
+  /* border: 5px solid green; */
+  background-color: #bbdecf;
+  color: #000000;
+}
+footer {
+  color: #0b7285;
 }
