@@ -1,11 +1,13 @@
 /* inside */
 .container {
-  /* border: 5px solid green; */
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .container > .panel {
+  border: 5px solid green;
   width: 50%;
   height: 100%;
   display: flex;
@@ -20,7 +22,7 @@
   font-size: 1.5em;
 }
 .container > .project-img {
-  /* border: 5px solid green; */
+  border: 5px solid green;
   width: 40%;
   display: flex;
   flex-flow: column nowrap;
@@ -32,9 +34,18 @@
 }
 .left,
 .right {
-  /* border: 5px solid green; */
+  border: 5px solid green;
+  position: absolute;
+  top: 50%;
+
   width: 5%;
   text-align: center;
   font-weight: 600;
   font-size: 2em;
+}
+.left {
+  left: 3%;
+}
+.right {
+  right: 3%;
 }
