@@ -1,11 +1,11 @@
 /* inside */
 .container {
+  /* border: 5px solid green; */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 .container > .panel {
-  /* border: 5px solid green; */
   width: 50%;
   height: 100%;
   display: flex;
@@ -28,7 +28,7 @@
   align-items: center;
 }
 .container > .project-img > img {
-  width: 100%;
+  width: 90%;
 }
 .left,
 .right {
