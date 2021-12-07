@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 .container > .panel {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   width: 50%;
   height: 100%;
   display: flex;
@@ -22,7 +22,7 @@
   font-size: 1.5em;
 }
 .container > .project-img {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   width: 40%;
   display: flex;
   flex-flow: column nowrap;
@@ -34,7 +34,7 @@
 }
 .left,
 .right {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   position: absolute;
   top: 50%;
 
@@ -48,4 +48,11 @@
 }
 .right {
   right: 3%;
+}
+
+.hidden {
+  display: none;
+}
+.active {
+  display: flex;
 }

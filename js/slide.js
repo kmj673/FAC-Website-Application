@@ -2,18 +2,36 @@
 
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
-const projects = document.querySelectorAll(".container");
+const carousel = document.querySelectorAll(".container");
 
-// get which button is clicked,
+let index = 0;
 
-function clicked(event) {
-  //   console.log(event.target);
-  if (event.target.textContent === ">") {
-    // to check the if the container is the hidden(display visible) or not
-  } else if (event.target.textContent === "<") {
+function rightClicked() {
+  carousel[index].classList.remove("active");
+  carousel[index].classList.add("hidden");
+
+  index++;
+  // if index increased and hit 3, then index is going back to number 0
+  if (index === 3) {
+    index = 0;
   }
+  carousel[index].classList.remove("hidden");
+  carousel[index].classList.add("active");
+}
+
+function leftClicked() {
+  carousel[index].classList.remove("active");
+  carousel[index].classList.add("hidden");
+
+  index--;
+  // if index decreased and hit -1(from first click), then index is going to be number 3
+  if (index === -1) {
+    index = 2;
+  }
+  carousel[index].classList.add("active");
+  carousel[index].classList.remove("hidden");
 }
 
 // right or left is clicked
-right.addEventListener("click", clicked);
-left.addEventListener("click", clicked);
+right.addEventListener("click", rightClicked);
+left.addEventListener("click", leftClicked);

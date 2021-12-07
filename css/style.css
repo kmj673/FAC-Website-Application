@@ -48,7 +48,7 @@ ul > li {
   padding: 0 1em;
 }
 .container {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   height: 80vh;
   margin: 0.5em 4.5em;
 }
