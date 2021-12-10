@@ -10,6 +10,7 @@ html {
   font-size: 100%;
 }
 .white-board {
+  /* border: 5px solid green; */
   height: 100vh;
   /* display: flex;
   flex-flow: column nowrap;
@@ -17,7 +18,6 @@ html {
   padding: 0 2em; */
 }
 header {
-  /* border: 5px solid green; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

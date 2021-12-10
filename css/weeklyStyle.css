@@ -1,12 +1,11 @@
 .container {
+  /* border: 0.5em dashed #fabcde; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  /* border: 0.5em dashed #fabcde; */
 }
 .container > .week {
-  /* border: 5px solid green; */
   width: 20%;
   height: 40vh;
   display: flex;
@@ -20,5 +19,23 @@
 
 .container > .week:hover {
   background-color: #fabcde;
+  color: #fff;
+}
+
+.popUp {
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 80vh;
+  background-color: #fabcde;
+  z-index: 1500;
+}
+.xButton {
+  /* border: 5px solid green; */
+  font-size: 2em;
+  font-weight: 800;
+  position: absolute;
+  right: 0;
+  padding: 2em;
   color: #fff;
 }
