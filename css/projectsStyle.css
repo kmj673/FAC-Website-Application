@@ -21,6 +21,10 @@
 .container > .panel > span {
   font-size: 1.5em;
 }
+.container > .panel > span > a {
+  text-decoration: none;
+  color: black;
+}
 .container > .project-img {
   /* border: 5px solid green; */
   width: 40%;

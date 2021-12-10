@@ -2,16 +2,22 @@
 const weeks = document.querySelectorAll(".week");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
+
 //render each week with promptsObjs key and value
 function eachWeek(weekNumber, info) {
   console.log(weekNumber, info);
+  // const weekSpan = document.createElement("span");
+  // const weekText = document.createTextNode(`${weekNumber}`);
+
+  // weekSpan.append(weekText);
+  // console.log(weekSpan);
 }
 
 //popup with Document Object Model manipulation.
 
 //close pop up
-function closePopUp(event) {
-  const popUp = event.target.parentNode;
+function closePopUp(e) {
+  const popUp = e.target.parentNode;
   popUp.style.display = "none";
 }
 
