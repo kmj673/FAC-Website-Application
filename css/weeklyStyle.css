@@ -32,6 +32,7 @@
 }
 .popUp > span {
   font-size: 2em;
+  display: block;
 }
 .xButton {
   /* border: 5px solid green; */

@@ -5,13 +5,29 @@ const body = document.querySelector("body");
 
 //render each week with promptsObjs key and value
 function eachWeek(popUp, weekNumber, info) {
-  console.log(weekNumber, info);
+  // console.log(weekNumber, info);
   const weekSpan = document.createElement("span");
   const weekText = document.createTextNode(`${weekNumber}`);
   weekSpan.append(weekText);
   popUp.append(weekSpan);
-  // popUp.classList.add("popUp");
-  // console.log(popUp);
+
+  const topicSpan = document.createElement("span");
+  const topicText = document.createTextNode(`${info.topic}`);
+  topicSpan.append(topicText);
+  popUp.append(topicSpan);
+
+  const platformSpan = document.createElement("span");
+  const platformText = document.createTextNode(`${info.platform}`);
+  platformSpan.append(platformText);
+  popUp.append(platformSpan);
+
+  //how to append link text to link href , now it has problem as it is not connected as text but object string? I don't know what it is.
+  const linkAnchor = document.createElement("a");
+  const linkText = document.createTextNode(`${info.link}`);
+
+  linkAnchor.href = linkText;
+  linkAnchor.append(linkText);
+  popUp.append(linkAnchor);
 }
 
 //popup with Document Object Model manipulation.
