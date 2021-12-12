@@ -4,13 +4,14 @@ const container = document.querySelector(".container");
 const body = document.querySelector("body");
 
 //render each week with promptsObjs key and value
-function eachWeek(weekNumber, info) {
+function eachWeek(popUp, weekNumber, info) {
   console.log(weekNumber, info);
-  // const weekSpan = document.createElement("span");
-  // const weekText = document.createTextNode(`${weekNumber}`);
-
-  // weekSpan.append(weekText);
-  // console.log(weekSpan);
+  const weekSpan = document.createElement("span");
+  const weekText = document.createTextNode(`${weekNumber}`);
+  weekSpan.append(weekText);
+  popUp.append(weekSpan);
+  // popUp.classList.add("popUp");
+  // console.log(popUp);
 }
 
 //popup with Document Object Model manipulation.
@@ -18,7 +19,7 @@ function eachWeek(weekNumber, info) {
 //close pop up
 function closePopUp(e) {
   const popUp = e.target.parentNode;
-  popUp.style.display = "none";
+  popUp.remove();
 }
 
 // create  pop up
@@ -38,13 +39,12 @@ const popup = () => {
 
 //link to each week element with addEventListener
 weeks.forEach((week) =>
-  week.addEventListener("click", function () {
-    const popUp = popup();
-    const weekCount = event.target.textContent;
+  week.addEventListener("click", function (event) {
     //render every week with DOM manipulation
     for (const [weekNumber, info] of Object.entries(promptsObj)) {
-      if (weekCount === weekNumber) {
-        eachWeek(weekNumber, info);
+      if (promptsObj[`${event.target.textContent}`] === info) {
+        let popUp = popup();
+        eachWeek(popUp, weekNumber, info);
       }
     }
   })

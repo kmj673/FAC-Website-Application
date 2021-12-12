@@ -30,6 +30,9 @@
   background-color: #fabcde;
   z-index: 1500;
 }
+.popUp > span {
+  font-size: 2em;
+}
 .xButton {
   /* border: 5px solid green; */
   font-size: 2em;
