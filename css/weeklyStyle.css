@@ -30,16 +30,18 @@
   background-color: #fabcde;
   z-index: 1500;
 }
-.popUp > span {
-  font-size: 2em;
-  display: block;
-}
 .xButton {
-  /* border: 5px solid green; */
   font-size: 2em;
   font-weight: 800;
   position: absolute;
+  top: 0;
   right: 0;
-  padding: 2em;
+  margin: 2em;
   color: #fff;
+}
+/* not working at this moment */
+.popUpContent > {
+  border: 5px solid green;
+  font-size: 2em;
+  display: block;
 }

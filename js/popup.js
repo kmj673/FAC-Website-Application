@@ -10,24 +10,26 @@ function eachWeek(popUp, weekNumber, info) {
   const weekText = document.createTextNode(`${weekNumber}`);
   weekSpan.append(weekText);
   popUp.append(weekSpan);
+  weekSpan.classList.add("popUpContent");
 
   const topicSpan = document.createElement("span");
   const topicText = document.createTextNode(`${info.topic}`);
   topicSpan.append(topicText);
   popUp.append(topicSpan);
+  topicSpan.classList.add("popUpContent");
 
   const platformSpan = document.createElement("span");
   const platformText = document.createTextNode(`${info.platform}`);
   platformSpan.append(platformText);
   popUp.append(platformSpan);
+  platformSpan.classList.add("popUpContent");
 
-  //how to append link text to link href , now it has problem as it is not connected as text but object string? I don't know what it is.
   const linkAnchor = document.createElement("a");
   const linkText = document.createTextNode(`${info.link}`);
-
-  linkAnchor.href = linkText;
   linkAnchor.append(linkText);
+  linkAnchor.href = linkText.textContent; //for extracting the string for anchor tag href
   popUp.append(linkAnchor);
+  linkAnchor.classList.add("popUpContent");
 }
 
 //popup with Document Object Model manipulation.
