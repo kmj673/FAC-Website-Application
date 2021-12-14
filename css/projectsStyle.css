@@ -45,7 +45,9 @@
   width: 5%;
   text-align: center;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 5em;
+  color: #fabcde;
+  cursor: pointer;
 }
 .left {
   left: 3%;
@@ -59,4 +61,27 @@
 }
 .active {
   display: flex;
+}
+.indicator-container {
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 2em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.indicator-active {
+  /* border: 5px solid green; */
+  background-color: #fabcde;
+  display: block;
+  margin: 0 auto;
+  margin-top: -2em;
+  width: 7.5em;
+  height: 1em;
+}
+.indicator-index {
+  background-color: #000;
+  display: block;
+  width: 10em;
+  height: 0.5em;
 }

@@ -4,6 +4,7 @@ const container = document.querySelector(".container");
 const body = document.querySelector("body");
 
 //render each week with promptsObjs key and value
+//popup with Document Object Model manipulation.
 function eachWeek(popUp, weekNumber, info) {
   // console.log(weekNumber, info);
   const weekSpan = document.createElement("span");
@@ -31,8 +32,6 @@ function eachWeek(popUp, weekNumber, info) {
   popUp.append(linkAnchor);
   linkAnchor.classList.add("popUpContent");
 }
-
-//popup with Document Object Model manipulation.
 
 //close pop up
 function closePopUp(e) {

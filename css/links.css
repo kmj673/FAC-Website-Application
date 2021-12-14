@@ -18,16 +18,14 @@
   font-weight: 600;
   /* border: 0.5em dashed #fabcde; */
   color: #fabcde;
+  cursor: pointer;
+  text-decoration: none;
 }
 .container > .link > a {
   text-decoration: none;
-  color: black;
+  color: #fabcde;
 }
 .container > .link:hover {
-  background-color: #fabcde;
   color: #fff;
-}
-.container > .link > a:hover {
   background-color: #fabcde;
-  color: #fff;
 }
