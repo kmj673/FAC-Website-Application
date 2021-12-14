@@ -46,3 +46,19 @@ ul > li:hover {
 footer {
   color: #0b7285;
 }
+.theme {
+  position: fixed;
+  top: 0;
+  padding: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+}
+.dark {
+  right: 0;
+}
+.light {
+  left: 0;
+}
+.hidden {
+  display: none;
+}
